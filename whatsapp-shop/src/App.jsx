@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { ShopProvider } from './context/ShopContext';
 import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
@@ -7,7 +7,7 @@ import ConfirmationPage from './pages/ConfirmationPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ShopProvider>
         <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
           <Navbar />
