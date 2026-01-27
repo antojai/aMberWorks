@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useShop } from '../context/ShopContext';
 import { MessageCircle, Trash2, AlertCircle } from 'lucide-react';
 
-const OWNER_PHONE = '918148535076';
+const OWNER_PHONE = '918300829778';
 
 export default function OrderPage() {
     const { cart, removeFromCart, updateQuantity, getCartTotal, clearCart } = useShop();
