@@ -30,7 +30,7 @@ function App() {
           </footer>
         </div>
       </ShopProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
