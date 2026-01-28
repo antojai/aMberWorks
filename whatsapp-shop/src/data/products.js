@@ -10,7 +10,13 @@ export const products = [
         mrp: 2799,
         // Using imported image from public folder (Github Pages compatible)
         image: "/aMberWorks/images/cheatsheet-pad.jpg",
-        description: "Designed for professionals who prefer a clean, distraction-free workspace. Includes essential references for Snowflake, Databricks, Python, and SQL directly on your desk.",
+        badge: "Launch Offer",
+        description: `Designed for professionals who prefer a clean, distraction-free workspace.
+The Amber Works Data Engineering Cheat Sheet Mouse Pad brings essential data engineering knowledge directly to your desk. No switching tabs, no searching notes — everything you need is always in front of you.
+
+What’s Included: • Data warehousing concepts • Key Snowflake concepts • Essential Databricks components • Python (focused on data engineering) • Frequently asked SQL questions • Quick references of DAX formulas for Power BI • Roadmap to LLMs & AI • Data engineering workflows
+
+Build & Quality: • Smooth surface for precise mouse movement • Anti-slip rubber base • Durable, long-lasting print • Easy to clean and maintain`,
         features: [
             "Extra Large Size: 92 × 36 cm",
             "Snowflake & Databricks Concepts",

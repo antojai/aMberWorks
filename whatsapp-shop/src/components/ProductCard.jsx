@@ -1,10 +1,12 @@
-import { Plus } from 'lucide-react';
+import { useState } from 'react';
+import { Plus, ChevronDown, ChevronUp } from 'lucide-react';
 import { useShop } from '../context/ShopContext';
 
 export default function ProductCard({ product }) {
     const { addToCart, cart, updateQuantity, removeFromCart } = useShop();
+    const [isExpanded, setIsExpanded] = useState(false);
+
     const cartItem = cart.find(item => item.id === product.id);
-    const discount = product.mrp ? Math.round(((product.mrp - product.price) / product.mrp) * 100) : 0;
 
     return (
         <div className="card" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
@@ -17,7 +19,8 @@ export default function ProductCard({ product }) {
                         e.target.src = 'https://placehold.co/400x300?text=No+Image';
                     }}
                 />
-                {discount > 0 && (
+
+                {product.badge ? (
                     <span style={{
                         position: 'absolute',
                         top: '10px',
@@ -29,9 +32,9 @@ export default function ProductCard({ product }) {
                         fontSize: '0.8rem',
                         fontWeight: 'bold'
                     }}>
-                        {discount}% OFF
+                        {product.badge}
                     </span>
-                )}
+                ) : null}
             </div>
 
             <div style={{ padding: '1rem', display: 'flex', flexDirection: 'column', gap: '0.5rem', flex: 1 }}>
@@ -39,9 +42,36 @@ export default function ProductCard({ product }) {
 
                 {/* Description & Features */}
                 <div style={{ flex: 1 }}>
-                    <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
-                        {product.description}
-                    </p>
+                    <div style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
+                        <p style={{ whiteSpace: 'pre-line' }}>
+                            {isExpanded ? product.description : `${product.description.slice(0, 100)}...`}
+                        </p>
+                        {product.description.length > 100 && (
+                            <button
+                                onClick={() => setIsExpanded(!isExpanded)}
+                                style={{
+                                    background: 'none',
+                                    border: 'none',
+                                    color: 'var(--primary)',
+                                    fontWeight: 'bold',
+                                    padding: '0',
+                                    marginTop: '0.25rem',
+                                    fontSize: '0.85rem',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    gap: '0.25rem',
+                                    cursor: 'pointer'
+                                }}
+                            >
+                                {isExpanded ? (
+                                    <>See Less <ChevronUp size={14} /></>
+                                ) : (
+                                    <>See More <ChevronDown size={14} /></>
+                                )}
+                            </button>
+                        )}
+                    </div>
+
                     {product.features && (
                         <ul style={{ paddingLeft: '1.2rem', margin: '0.5rem 0', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
                             {product.features.slice(0, 3).map((feature, idx) => (
