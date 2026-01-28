@@ -80,5 +80,42 @@ Build & Quality:
             "Fade-resistant Print",
             "Smooth Tracking"
         ]
+    },
+    {
+        id: 3,
+        name: "Data Engineering Cheat Sheet – Extra Large Mouse Pad (Snowflake & Databricks Edition) - Amber Yellow–Green",
+        price: 1799,
+        mrp: 2799,
+        image: "/aMberWorks/images/cheat-sheet-amber.jpg",
+        badge: "Launch Offer",
+        description: `Bold, energetic, and uniquely Amber Works.
+This version is perfect if you want your desk to stand out while still being extremely functional. Learning meets design — without compromising clarity.
+
+• Edition: Snowflake & Databricks (Amber Yellow-Green)
+• Size: Extra Large (92 × 36 cm) - Ideal for full desk setups
+• Color: Amber Yellow–Green (Energetic, Bold)
+
+What’s Included:
+• Data warehousing concepts
+• Key Snowflake concepts
+• Essential Databricks components
+• Python (focused on data engineering)
+• Frequently asked SQL questions
+• Quick references of DAX formulas for Power BI
+• Roadmap to LLMs & AI
+• Data engineering workflows
+
+Build & Quality:
+• Comfortable mouse movement
+• Non-slip rubber base
+• High-quality, durable print
+• Designed for daily professional use`,
+        features: [
+            "92x36cm Extra Large",
+            "Snowflake & Databricks",
+            "Energetic Amber Design",
+            "Durable Print",
+            "Non-slip Base"
+        ]
     }
 ];
