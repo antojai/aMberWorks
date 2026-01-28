@@ -43,5 +43,42 @@ Use Cases:
             "Anti-slip Rubber Base",
             "Minimalist Black Design"
         ]
+    },
+    {
+        id: 2,
+        name: "Data Engineering Cheat Sheet – Extra Large Mouse Pad (Snowflake & Databricks Edition) - Gradient Blue–Red",
+        price: 1799,
+        mrp: 2799,
+        image: "/aMberWorks/images/cheat-sheet-gradient.jpg",
+        badge: "Launch Offer",
+        description: `A modern look for engineers who like a vibrant, creative workspace.
+The Amber Works Data Engineering Cheat Sheet Mouse Pad combines practical learning with eye-catching design. Ideal for daily coding, studying, and interview preparation.
+
+• Edition: Snowflake & Databricks (Gradient)
+• Size: Extra Large (92 × 36 cm) - Plenty of space for keyboard and mouse
+• Color: Gradient Blue–Red (Modern, Bold)
+
+What’s Included:
+• Data warehousing concepts
+• Key Snowflake concepts
+• Essential Databricks components
+• Python (focused on data engineering)
+• Frequently asked SQL questions
+• Quick references of DAX formulas for Power BI
+• Roadmap to LLMs & AI
+• Data engineering workflows
+
+Build & Quality:
+• Smooth tracking surface
+• Anti-slip base for stability
+• Fade-resistant print
+• Built for long work sessions`,
+        features: [
+            "92x36cm Extra Large",
+            "Snowflake & Databricks",
+            "Vibrant Gradient Design",
+            "Fade-resistant Print",
+            "Smooth Tracking"
+        ]
     }
 ];
